@@ -129,7 +129,10 @@ public class JavatarImage {
 	 * @throws UnsupportedEncodingException
 	 */
 	public void setDefaultImage(String image) throws UnsupportedEncodingException {
-		while (args.size() != 2) {
+		while (true) {
+			if (args.size() >= 2)
+				break;
+			
 			args.add("");
 		}
 		
@@ -142,7 +145,10 @@ public class JavatarImage {
 	 * @param b Force default avatar
 	 */
 	public void setForce(boolean b) {
-		while (args.size() != 3) {
+		while (true) {
+			if (args.size() >= 3)
+				break;
+			
 			args.add("");
 		}
 		
@@ -158,7 +164,10 @@ public class JavatarImage {
 	 * @param rating The maximum rating of the avatar
 	 */
 	public void setRating(String rating) {
-		while (args.size() != 4) {
+		while (true) {
+			if (args.size() >= 4)
+				break;
+			
 			args.add("");
 		}
 		
