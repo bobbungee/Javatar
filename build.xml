@@ -28,7 +28,16 @@
             </manifest>
         </jar>
     </target>
+	
+	<target name="docs">
+	    <mkdir dir="${basedir}/docs/"/>
+	    <javadoc 
+            destdir="${basedir}/docs/"
+            additionalparam="-J-Dorg.apache.commons.attributes.javadoc.CATaglet.sources=${basedir}">
+            <fileset dir="${basedir}/" includes="**/*.java" />
+        </javadoc>
+	    </target>
 
-    <target name="main" depends="clean,jar"/>
+    <target name="main" depends="clean,jar,docs"/>
 
 </project>
