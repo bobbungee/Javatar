@@ -1,4 +1,4 @@
-package com.javatar;
+package javatar;
 
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
